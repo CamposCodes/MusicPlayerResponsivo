@@ -1,0 +1,264 @@
+
+
+@font-face {
+    font-family: campos;
+    src: url(./font/x.otf);
+}
+
+:root{
+    --color: #000000;
+    --color1: #020402;
+    --color2: #20fc8f;
+    --color3: #9aa0a8;
+    --color4: #ebebeb;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: campos;
+    color: var(--color1);
+}
+
+header{
+    background-color: var(--color1);
+    box-shadow: 0px 3px 10px #464646;
+}
+
+.nav-bar{
+    color: var(--color2);
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 175px;
+    height: 60px;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.nav-item{
+    margin: 0 15px;
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: var(--color2);
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+    transition: .5s;
+    font-size: 20px;
+}
+.nav-link:hover{
+    letter-spacing: 0.4rem;
+    text-shadow: -1px -2px 10px var(--color2);
+}
+.login-button button{
+    border: none;
+    background-color: var(--color2);
+    padding: 10px 15px;
+    border-radius: 50px;
+    transition: .5s;
+}
+.login-button button a{
+    letter-spacing: 0.1rem;
+    color: var(--color1);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+.login-button button:hover{
+    padding: 13px 18px;
+    box-shadow: 2px 5px 30px -5px var(--color2);
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    transition: .2s;
+    margin: 5px;
+}
+.x-icon{
+    transform: rotateZ(90deg);
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+
+/* .............................. */
+.title-nav{
+    position: fixed;
+    padding: 1rem 2rem;
+    font-size: .6rem;
+    top: 90px;
+    opacity: 50%;
+}
+.title-nav h1{
+    margin:1rem 5rem 0rem -1rem;
+    color: var(--color1);
+}
+
+
+.nav-samples{
+    margin-top: 10px;
+    background: var(--color2);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    object-fit: contain; /*cada poster vai conter no espaço - n vai ser cortado*/
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.sample{
+    margin: 0.5rem;
+    background: var(--color3);
+    padding: 1rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    z-index: 1;
+}
+h4{
+    letter-spacing: 0.3rem;
+}
+.descricao{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+i{
+    cursor: pointer;
+}
+#like-button, #on-like-button{
+    font-size: 20px;
+    margin-right: -2px;
+}
+#pause-button{
+    font-size: 30px;
+    display: none;
+    margin-left: -8px;
+}
+#reload-button{
+    font-size: 20px;
+    margin-left: -6px;
+}
+#on-like-button{
+    display: none;
+}
+#play-button{
+    font-size: 30px;
+    margin-left: -8px;
+}
+.duracao{
+    width: 100px;
+    margin-top: 25px;
+}
+.barra{
+    width: 100px;
+    height: 3px;
+    border: 1px solid var(--color4);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--color3);
+}
+progress{
+    height: 3px;
+    width: 0;
+    background-color: var(--color);
+}
+.ponto{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--color1);
+    margin-left: -2px;
+    cursor: pointer;
+}
+
+.tempo{
+    margin-top: 5px;
+    width: 100px;
+    height: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.tempo span{
+    font-size: 9px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--color1);
+}
+
+
+
+@media screen and (max-width: 730px) {
+    .nav-bar{
+        padding: 1.5rem 1.5rem;
+    }
+    .nav-item{
+        display: none;
+    }
+    .login-button{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button{
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button{
+        width: 100%;
+    }
+    .open{
+        display: block;
+    }
+    .nav-samples{
+        object-fit: contain; /*cada poster vai conter no espaço - n vai ser cortado*/
+        display: flex;
+        overflow-y: hidden;
+        overflow-x: scroll;
+    }
+}
+
