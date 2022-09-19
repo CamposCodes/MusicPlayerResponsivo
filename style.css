@@ -94,6 +94,7 @@ header{
 }
 .x-icon{
     transform: rotateZ(90deg);
+    margin: 5px;
 }
 
 .mobile-menu-icon{
