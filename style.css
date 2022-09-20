@@ -104,16 +104,17 @@ header{
 /* .............................. */
 .title-nav{
     position: fixed;
-    padding: 1rem 2rem;
     font-size: .6rem;
-    top: 90px;
-    opacity: 50%;
+    top: 80px;
 }
 .title-nav h1{
-    margin:1rem 8rem 0rem -1rem;
+    margin:3rem 0rem 0rem .5rem;
     color: var(--color1);
+    transition: .4s;
 }
-
+.title-nav h1:hover{
+    letter-spacing: 0.2rem;
+}
 
 .nav-samples{
     margin-top: 10px;
