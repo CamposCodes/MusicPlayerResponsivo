@@ -1,15 +1,18 @@
 let buttonMenu = document.querySelector('#showMenu');
 let menuIcon = document.querySelector('.icon');
+let logo = document.querySelector('.logo');
 
 function menuShow(){
     let mobileMenu = document.querySelector('.mobile-menu');
     if(mobileMenu.classList.contains('open')){
         mobileMenu.classList.remove('open');
         menuIcon.classList.remove('x-icon');
+        logo.style.display = 'block';
     }
     else{
         mobileMenu.classList.add('open');
         menuIcon.classList.add('x-icon');
+        logo.style.display = 'none';
     }
 }
 buttonMenu.addEventListener('click', menuShow);
@@ -45,7 +48,7 @@ onLike.addEventListener('click', () => {
     liked = false;
 });
 reload.addEventListener('click',() => {
-    musica.load();
+ 
 });
 
 

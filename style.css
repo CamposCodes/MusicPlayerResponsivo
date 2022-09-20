@@ -88,13 +88,10 @@ header{
 .icon{
     width: 40px;
     height: 40px;
-    margin: 5px;
     transition: .2s;
-    margin: 5px;
 }
 .x-icon{
     transform: rotateZ(90deg);
-    margin: 5px;
 }
 
 .mobile-menu-icon{
@@ -113,7 +110,7 @@ header{
     opacity: 50%;
 }
 .title-nav h1{
-    margin:1rem 5rem 0rem -1rem;
+    margin:1rem 8rem 0rem -1rem;
     color: var(--color1);
 }
 
